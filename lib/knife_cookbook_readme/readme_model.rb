@@ -15,6 +15,14 @@ module KnifeCookbookReadme
       @metadata.description
     end
 
+    def bitdeli
+      @metadata.bitdeli
+    end
+    
+    def travis
+      @metadata.travis
+    end
+    
     def platforms
       @metadata.platforms.map do |platform, version|
         format_constraint(platform.capitalize, version)
